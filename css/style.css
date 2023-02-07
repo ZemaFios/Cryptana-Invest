@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ALLE GENERELLE INDSTILLINGER */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.625rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Navigation Start */
+.topNav {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(#0000A4, #5858C9);
+    /* display: flex; */
+    z-index: 1;
+}
+
+.topNav ul {
+    display: none;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #808080;
+}
+
+.topNav ul.show {
+    width: 100%;
+    margin-top: -247px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.nav-link {
+    height: 100%;
+}
+
+.topNav ul li a {
+    color: white;
+    padding: 0 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+}
+
+.icon {
+    width: auto;
+    display: block;
+    font-size: 3rem;
+    color: #BE3400;
+    position: fixed;
+    margin-left: 340px;
+    margin-top: -230px;
+    z-index: 2;
+}
+
+.logo img {
+    max-width: 200px;
+    margin: 20px;
+}
+
+h1 {
+    color: white;
+    width: 220px;
+    margin-left: 92px;
+    font-size: 3rem;
+}
+
+span {
+    text-transform: uppercase;
+}
+
+/* Navigation Slut */
+
+/* dashboard Start */
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.dashboard h2 {
+    color: #0000A4;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.dashboard-button {
+    width: 200px;
+    height: 50px;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 5px;
+    background-color: #BE3400;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+    background: linear-gradient(#0000A4, #5858C9);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-left: 20px;
+    color: white;
+}
+
+.bi-wallet2,
+.bi-currency-euro,
+.bi-currency-bitcoin,
+.bi-graph-up-arrow {
+    margin-top: 10px;
+    color: white;
+}
+
+.card-button {
+    width: 200px;
+    height: 25px;
+    background-color: #BE3400;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Dashboard Slut */
+
+/* Slider Start */
+.slider {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    object-fit: cover;
+    width: 100%;
+    z-index: -99;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 110px;
+    left: 40px;
+    border-radius: 20px;
+    color: white;
+    height: 150px;
+    padding-top: 10px;
+}
+
+.bottom-left-border {
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    border-radius: 10px;
+    color: white;
+    width: 330px;
+    height: 130px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: rgba(48, 47, 47, 0.7);
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.bottom-left-border p {
+    font-size: 1.2rem;
+    width: 270px;
+}
+
+.bottom-left img {
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+/* SliderSlut */
+
+
+/* FAQ Start */
+
+.faq {
+    width: 100%;
+    padding: 20px;
+}
+
+.faq h2 {
+    width: 200px;
+    margin: 0 auto;
+    color: #0000A4;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #808080;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    resize: vertical;
+    display: flex;
+}
+
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #808080;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    resize: vertical;
+    display: flex;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px 30px;
+    cursor: pointer;
+    color: white;
+    background-color: #0DC300;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+/* FAQ Slut */
+
+/* Footer */
+footer {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(#0000A4, #5858C9);
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-logo img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.some {
+    font-size: 3rem;
+}
+
+.kontakt-information h3 {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+/* Mediaquery */
+
+@media (min-width: 900px) {
+    .logo img {
+        width: 200px;
+        margin: 20px;
+    }
+
+    .icon {
+        margin-left: 850px;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .card-2,
+    .card-4 {
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 1140px) {
+    .logo {
+        margin-left: 400px;
+    }
+
+    h1 {
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .topNav ul.show {
+        margin-top: -201px;
+    }
+
+    .icon {
+        margin-left: 1476px;
+        margin-top: -200px;
+    }
+
+    .dashboard-grid {
+        width: 840px;
+        margin: 0 auto;
+    }
+
+    .card-button {
+        width: 100px;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
+        max-width: 400px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .slider {
+        width: 1140px;
+    }
+
+    .slider img {
+        width: 1140px;
+        height: 600px;
+    }
+
+    .bottom-left {
+        bottom: 60px;
+        left: 60px;
+        color: white;
+        width: 500px;
+        height: 175px;
+        border: 1px solid white;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding-left: 30px;
+    }
+
+    .bottom-left p {
+        font-size: 1.6rem;
+    }
+
+    .bottom-left img {
+        width: 150px;
+        height: 40px;
+        margin-top: 5px;
+    }
+
+    .bottom-left-border {
+        bottom: 60px;
+        left: 60px;
+        border-radius: 20px;
+        color: white;
+        width: 500px;
+        height: 175px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding-left: 30px;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+    }
+
+    .bottom-left-border p {
+        font-size: 1.6rem;
+        font-weight: 300;
+        width: 400px;
+    }
+
+    .faq {
+        width: 1140px;
+        margin: 0 auto;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .footer-logo {
+        margin-left: 300px;
+    }
+
+    .some {
+        font-size: 4rem;
+    }
+
+    .kontakt-information {
+        font-size: 1.5rem;
+        margin-right: 300px;
+    }
+}
